@@ -1,0 +1,57 @@
+.popularCategorys {
+    margin-top: 2%;
+
+    h2 {
+        display: block;
+        position: relative;
+        text-align: left;
+        color: #333;
+        margin: 0 0 24px;
+        font-size: 24px;
+        line-height: 27px;
+        font-weight: 400;
+    }
+
+    .popularCategorys_collections {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        .categoryCard {
+            min-width: 15%;
+            padding: 39px 10px 35px;
+            margin-bottom: 2%;
+            transition: transform ease .3s, box-shadow ease .3s;
+
+            .categoryCard_image {
+                position: relative;
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+
+                img {
+                    width: 100px;
+                    height: 80px;
+                }
+            }
+
+            .category_card_title {
+                text-align: center;
+                margin-top: 1%;
+            }
+        }
+
+        .categoryCard:hover {
+            border-bottom: solid 2px rgba(118, 118, 118, 0.289);
+            transform: translateY(-2px);
+            height: 100px;
+
+            .category-card-title {
+                color: #7a4cd9;
+            }
+        }
+
+    }
+
+}

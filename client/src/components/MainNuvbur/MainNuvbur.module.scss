@@ -1,0 +1,192 @@
+$color_header_ListButton: #2a27277e;
+
+@media screen and (max-width: 426px) {
+    .mainNavBur{
+        display: none;
+    }
+}
+@media screen and (max-width: 990px) {
+    .mainNavBur{
+        display: none;
+    }
+}
+.mainNavBur {
+    background-color: #7a4cd9;
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 1%;
+    position: relative;
+
+    ul {
+        position: relative;
+        z-index: 1000;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        list-style: none;
+        cursor: pointer;
+
+        .mainNavburButtons {
+            flex: auto;
+            background-color: transparent;
+            transition: background-color .3s linear;
+            text-align: center;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+            .containerButton {
+                display: block;
+                padding: 17px;
+                font-size: 13px;
+                font-weight: 1000;
+                color: #fff;
+                position: relative;
+                background: transparent;
+                cursor: pointer;
+                letter-spacing: 1.2px;
+                line-height: 19px;
+
+                .containerButton_icon {
+                    fill: white;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .mainNavBur_CatalogMeny {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: auto;
+            left: 0;
+            right: 0;
+            z-index: 9;
+            background-color: #ffffff;
+            min-width: 160px;
+            padding: 15px 0;
+            margin: 0;
+            font-size: 14px;
+            text-align: left;
+            list-style: none;
+            width: 256px;
+            transition: opacity .3s, visibility .3s;
+            max-height: calc(100vh - 100%);
+            overflow-x: hidden;
+            overflow-y: auto;
+            border-right: 1px solid rgba(0, 0, 0, 0.09);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            border-radius: 0 0 0 3px;
+
+            .CatalogMeny_item {
+                display: flex;
+                justify-content: space-between;
+                width: 88%;
+                height: auto;
+                text-transform: none;
+                align-items: center;
+                color: #333;
+                transition: color .3s;
+                line-height: 20px;
+                clear: both;
+                padding: 10px 35px 10px 21px;
+                position: relative;
+
+                span {
+                    display: inline-block;
+                    font-weight: 400;
+                    max-width: 90%;
+                    font-size: 13px;
+                    line-height: 22px;
+                    white-space: normal;
+                }
+            }
+
+            .CatalogMeny_item {
+                display: flex;
+                justify-content: space-between;
+                width: 88%;
+                height: auto;
+                text-transform: none;
+                align-items: center;
+                color: #333333c5;
+                transition: color .3s;
+                line-height: 20px;
+                clear: both;
+                padding: 10px 25px 10px 21px;
+                position: relative;
+                text-decoration: none;
+                span {
+                    display: inline-block;
+                    font-weight: 400;
+                    max-width: 90%;
+                    font-size: 14px;
+                    line-height: 22px;
+                    white-space: normal;
+                }
+            }
+            .CatalogMeny_item:hover {
+                color:#7a4cd9;
+            }
+        }
+       
+
+        .mainNavburButtons:hover {
+            background-color: #a77cfc7a;
+
+            .mainNavBur_CatalogMeny {
+                display: flex;
+            }
+            
+        }
+    }
+ 
+    .mainNavBur_DopCatalogMeny {
+        display: inline-block;
+        background-color: white;
+        top: 100%;
+        left: 256px;
+        z-index: 18;
+        padding: 37px 40px 10px;
+        transition: opacity .4s, visibility .4s, left .4s;
+        position: absolute;
+        white-space: normal;
+
+        min-height: 320px;
+        width: calc(100% - 335px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.175);
+        border-radius: 0 0 3px 0;
+        text-align: left;
+        text-transform: none;
+
+        .clearfix {
+            display: flex;
+            flex-wrap: wrap;
+
+            .sub_category {
+                display: block;
+                margin: 0 0 32px;
+                padding: 20px;
+                height: 30px;
+
+                a {
+                    font-size: 24px;
+                    color: $color_header_ListButton;
+                    text-decoration: none;
+                    transition: color .3s;
+                }
+                a:hover{
+                    color:#7a4cd9;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,90 @@
+@media screen and (max-width: 426px) {
+  .baner_box {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    flex-direction: column !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    padding-top: 20px;
+    gap: 10px;
+  }
+  .baner_box .baner_box_cart1 {
+    width: 100% !important;
+  }
+  .baner_box .baner_box_cart2 {
+    width: 100% !important;
+  }
+  .baner_box .baner_box_cart3 {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .baner_box {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .baner_box .baner_box_cart1 {
+    width: 25%;
+  }
+  .baner_box .baner_box_cart2 {
+    width: 25%;
+  }
+  .baner_box .baner_box_cart3 {
+    width: 50%;
+  }
+  .baner_additation {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.baner_box {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+.baner_box .baner_box_cart1 {
+  width: 25%;
+}
+.baner_box .baner_box_cart2 {
+  width: 25%;
+}
+.baner_box .baner_box_cart3 {
+  width: 50%;
+}
+
+.baner_additation {
+  display: flex;
+  margin-top: 2%;
+  width: 100%;
+  min-height: 200px;
+}
+.baner_additation .baner_additation_item {
+  margin-top: 30px;
+  text-align: center;
+  padding: 0 15px;
+}
+.baner_additation .baner_additation_item .additation_img {
+  margin-bottom: 10px;
+  max-height: 50px;
+}
+.baner_additation .baner_additation_item .additional_title {
+  font-size: 16px;
+  color: #333;
+  line-height: 25px;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.baner_additation .baner_additation_item .additional_description {
+  font-size: 13px;
+  color: #666;
+  line-height: 22px;
+}/*# sourceMappingURL=BannerBoxMain.module.css.map */

@@ -1,0 +1,120 @@
+@media screen and (max-width: 426px) {
+    .baner_box{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        padding: 0;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: column !important;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        padding-top: 20px;
+        gap:10px;
+        .baner_box_cart1{
+            width:100% !important;
+        }
+        .baner_box_cart2{
+            width:100% !important;
+        }
+        .baner_box_cart3{
+            width: 100% !important;
+        }
+      
+    }
+    
+}
+@media screen and (max-width: 990px) {
+    .baner_box{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        padding: 0;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-top: 20px;
+    
+        .baner_box_cart1{
+            width:25%;
+        }
+        .baner_box_cart2{
+            width:25%;
+        }
+        .baner_box_cart3{
+            width: 50%;
+        }
+      
+    }
+    
+    .baner_additation{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.baner_box{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 20px;
+
+    .baner_box_cart1{
+        width:25%;
+    }
+    .baner_box_cart2{
+        width:25%;
+    }
+    .baner_box_cart3{
+        width: 50%;
+    }
+  
+}
+
+.baner_additation{
+    display: flex;
+    margin-top:2%;
+    width: 100%;
+    min-height:200px;
+    .baner_additation_item{
+        margin-top: 30px;
+        text-align: center;
+        padding: 0 15px;
+
+        .additation_img{
+            margin-bottom: 10px;
+            max-height: 50px;
+        }
+        .additional_title{
+            font-size: 16px;
+            color: #333;
+            line-height: 25px;
+            margin-bottom: 6px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .additional_description{
+            font-size: 13px;
+            color: #666;
+            line-height: 22px;
+        }
+    }
+}

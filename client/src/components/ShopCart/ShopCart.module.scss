@@ -1,0 +1,244 @@
+@media screen and (max-width: 750px) {
+    .ShopCart {
+        display: flex;
+        flex-direction: column;
+        background-color: #fefefe;
+        border: solid 1px #4709c35c;
+        padding: 2%;
+        border-radius: 12px;
+        margin-top: 2%;
+
+        .MainInfoBlock {
+            display: flex;
+            width: 100% !important;
+
+            .ShopCart_image {
+                width: 100px !important;
+                height: 150px !important;
+
+                img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+            }
+
+            .ShopCart_InfoBlock {
+                margin-left: 10%;
+                width: 50%;
+                color: #7b4cd9;
+
+                p {
+                    padding-top: 10px;
+                }
+            }
+        }
+
+        .DopInfoBlock {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            width: 100% !important;
+
+            .ShopCart_PriceBlock {
+                width: 100% !important;
+                display: flex;
+
+                .CountSelector {
+                    display: flex;
+                    margin-left: 2%;
+
+                    button {
+                        width: 45px;
+                        height: 30px;
+                        margin-top: 2%;
+                        font-size: 20px;
+                        border: solid 1px rgb(255, 255, 255) !important;
+                    }
+                }
+
+                p {
+                    padding-top: 10px;
+                }
+            }
+
+            .ShopCart_SummBlock {
+                width: 100% !important;
+                align-self: flex-end;
+                margin-top: 1%;
+                color: #7b4cd9;
+            }
+        }
+
+
+
+    }
+
+    .wrupperEnterOrders {
+        display: flex;
+        flex-direction: column !important;
+        margin-left: 10% !important;
+        width: 80%;
+
+        select {
+            border: solid 1px #7b4cd9;
+            border-radius: 10px;
+            width: 90% !important;
+            height: 50px;
+            margin-right: 5%;
+            margin-top: 2%;
+
+
+        }
+
+        .priceBlock {
+            width: 90% !important;
+
+            h2 {
+                color: #7a4cd9;
+            }
+
+            .enterOrders {
+                width: 100%;
+                height: 50px;
+                margin-top: 2%;
+                font-size: 20px;
+                color: white;
+                background: #7a4cd9;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+        }
+
+
+    }
+
+}
+
+.ShopCartModule {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.ShopCart {
+    display: flex;
+    background-color: #fefefe;
+    border: solid 1px #4709c35c;
+    padding: 2%;
+    border-radius: 12px;
+    margin-top: 2%;
+
+    .MainInfoBlock {
+        display: flex;
+        width: 50%;
+
+        .ShopCart_image {
+            width: 150px;
+            height: 150px;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        .ShopCart_InfoBlock {
+            color: #7b4cd9;
+            margin-left: 5%;
+
+            p {
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .DopInfoBlock {
+        display: flex;
+        width: 50%;
+
+        .ShopCart_PriceBlock {
+            width: 50%;
+
+            .CountSelector {
+                display: flex;
+
+                button {
+                    width: 45px;
+                    height: 30px;
+                    margin-top: 2%;
+                    border-radius: 10px;
+                    border: solid 1px rgb(253, 253, 253);
+                }
+            }
+
+            p {
+                padding-top: 10px;
+            }
+        }
+
+        .ShopCart_SummBlock {
+            width: 50%;
+            margin-top: 1%;
+            color: #7b4cd9;
+        }
+
+        .onDelete {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            background-image: url('/img/deletebtn.png');
+            background-size: cover;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.headerPointer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+    color: #7b4cd9;
+}
+
+.wrupperEnterOrders {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 0%;
+    margin-bottom: 2%;
+    width: 90%;
+
+    select {
+        border: solid 1px #7b4cd9;
+        border-radius: 10px;
+        width: 50%;
+        height: 50px;
+        margin-right: 5%;
+        margin-top: 2%;
+
+    }
+
+    .priceBlock {
+        width: 20%;
+
+        h2 {
+            color: #7a4cd9;
+        }
+
+        .enterOrders {
+            width: 100%;
+            height: 50px;
+            margin-top: 2%;
+            font-size: 20px;
+            color: white;
+            background: #7a4cd9;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+    }
+
+}

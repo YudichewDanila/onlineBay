@@ -1,0 +1,47 @@
+.popularCategorys {
+  margin-top: 2%;
+}
+.popularCategorys h2 {
+  display: block;
+  position: relative;
+  text-align: left;
+  color: #333;
+  margin: 0 0 24px;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 400;
+}
+.popularCategorys .popularCategorys_collections {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.popularCategorys .popularCategorys_collections .categoryCard {
+  min-width: 15%;
+  padding: 39px 10px 35px;
+  margin-bottom: 2%;
+  transition: transform ease 0.3s, box-shadow ease 0.3s;
+}
+.popularCategorys .popularCategorys_collections .categoryCard .categoryCard_image {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.popularCategorys .popularCategorys_collections .categoryCard .categoryCard_image img {
+  width: 100px;
+  height: 80px;
+}
+.popularCategorys .popularCategorys_collections .categoryCard .category_card_title {
+  text-align: center;
+  margin-top: 1%;
+}
+.popularCategorys .popularCategorys_collections .categoryCard:hover {
+  border-bottom: solid 2px rgba(118, 118, 118, 0.289);
+  transform: translateY(-2px);
+  height: 100px;
+}
+.popularCategorys .popularCategorys_collections .categoryCard:hover .category-card-title {
+  color: #7a4cd9;
+}/*# sourceMappingURL=PopularCategorysMain.module.css.map */
