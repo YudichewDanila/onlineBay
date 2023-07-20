@@ -21,8 +21,8 @@ export class OrderProductService {
 
   async createpay(id, value, shopingCartId) {
     const checkout = new YooCheckout({
-      shopId: '228615',
-      secretKey: 'test_XCka36x5uY0rDhog6HMXWhrpArQZ69wxkHD-VnfNurY',
+      shopId: '*******',
+      secretKey: 'TestKey',
     });
     const idempotenceKey = id;
     const createPayload: ICreatePayment = {
