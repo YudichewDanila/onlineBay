@@ -7,9 +7,7 @@ const ShopCartEnterOrder = ({props, fullPrice})=>{
     const shopingPoints = useAppSelector(state=> state.ShopPointSlice);
     const shopingCart = useAppSelector(state => state.ShopCartSlice);
     const [selectPoint, setSelectPoint] = useState('1');
-    console.log(fullPrice);
     async function onCreateOrder(){
-        
        const result = await postRequest('order-product', {
         IdShopingCart: props.shopingCart,
         IdPointOrders: Number(selectPoint),
@@ -17,11 +15,9 @@ const ShopCartEnterOrder = ({props, fullPrice})=>{
         shopingCart: shopingCart.shopCart,
         FullPrice: fullPrice,
        });
-       console.log(result.data.confirmation.confirmation_url);
        window.location = result.data.confirmation.confirmation_url;
     }
-    console.log(selectPoint);
-    console.log(props);
+
     return(
         <div className={style.wrupperEnterOrders}>
         <select value={selectPoint} 
