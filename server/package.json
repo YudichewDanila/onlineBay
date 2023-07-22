@@ -22,6 +22,7 @@
   "dependencies": {
     "@a2seven/yoo-checkout": "^1.1.4",
     "@nestjs/common": "^9.0.0",
+    "@nestjs/config": "^3.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/jwt": "^10.0.3",
     "@nestjs/platform-express": "^9.0.0",
@@ -29,6 +30,7 @@
     "@types/cookie-parser": "^1.4.3",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
     "mysql2": "^3.2.3",
     "pg": "^8.11.1",
     "reflect-metadata": "^0.1.13",

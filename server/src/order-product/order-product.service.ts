@@ -21,8 +21,8 @@ export class OrderProductService {
 
   async createpay(id, value, shopingCartId) {
     const checkout = new YooCheckout({
-      shopId: '228615',
-      secretKey: 'test_XCka36x5uY0rDhog6HMXWhrpArQZ69wxkHD-VnfNurY',
+      shopId: process.env.shopId,
+      secretKey: process.env.secretKey,
     });
     const idempotenceKey = id;
     const createPayload: ICreatePayment = {
@@ -32,7 +32,7 @@ export class OrderProductService {
       },
       confirmation: {
         type: 'redirect',
-        return_url: 'http://localhost:3000/shopcart',
+        return_url: process.env.return_url,
       },
     };
 

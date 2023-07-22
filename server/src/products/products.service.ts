@@ -46,7 +46,6 @@ export class ProductsService {
     const page = params.page;
     let product = [];
     let arrayManifacturs;
-    console.log(params.manifacturs);
     if (params.manifacturs != '') {
       arrayManifacturs = params.manifacturs.slice(0, -1).split('-');
     }

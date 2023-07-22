@@ -9,7 +9,7 @@ async function bootstrap() {
     origin: true,
   });
   app.use(cookieParser());
-  await app.listen(3001);
+  await app.listen(Number(process.env.numberPORT));
   console.log('Server run');
 }
 bootstrap();

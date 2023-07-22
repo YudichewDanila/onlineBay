@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { CategorysModule } from './categorys/categorys.module';
 import { Categorys } from './categorys/categorys.enity';
@@ -17,13 +18,14 @@ import { OrderShopingcartModule } from './order-shopingcart/order-shopingcart.mo
 
 @Module({
   imports: [
+    ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: '127.0.0.1',
-      port: 3306,
-      username: 'root',
-      password: '',
-      database: 'reactonlinestore',
+      host: process.env.host,
+      port: Number(process.env.port),
+      username: process.env.usernameBd,
+      password: process.env.password,
+      database: process.env.database,
       entities: [Categorys],
       autoLoadEntities: true,
       synchronize: true,

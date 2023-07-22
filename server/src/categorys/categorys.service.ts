@@ -19,12 +19,7 @@ export class CategorysService {
     const category = await this.CategorysRepository.find();
     return category;
   }
-  /*
-  async getCategory() {
-    const category = await this.connection.query('SELECT * FROM categorys');
-    return category;
-  }
-*/
+
   async deleteCategory(id: number) {
     return await this.CategorysRepository.delete(id);
   }
