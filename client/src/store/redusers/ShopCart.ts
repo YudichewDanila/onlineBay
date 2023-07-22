@@ -40,7 +40,9 @@ export const ShopCartSlice = createSlice({
             state.isLoading = false;
         },
         isLoad(state){
-            state.isLoading = true; 
+            state.isLoading = true;
+            state.isLoading = false;
+            state.isLoading = true;  
         },
         plusCount(state, action: PayloadAction<{ id, countProducts, maxCount }>) {
             state.shopCart = state.shopCart.map(item => {

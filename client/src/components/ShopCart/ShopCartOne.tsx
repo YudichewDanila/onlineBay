@@ -6,7 +6,6 @@ import { deleteRequest } from "@/api/server/deleteRequest";
 
 const ShopCartOne = ({props})=>{
     const dispatch = useAppDispatch();
-    console.log(props);
     function deleteProduct(id){
         deleteRequest(`order-shopingcart/${id}_${props.IdShopingCart.id}`)
         .then((data)=> dispatch(ShopCartSlice.actions.cheked(data.data)));
