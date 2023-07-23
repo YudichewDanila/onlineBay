@@ -4,7 +4,6 @@ import MainNuvbur from '@/components/MainNuvbur/MainNuvbur';
 import Footer from '@/components/Footer/Footer';
 import { getRequest } from "@/api/server/getRequest";
 import Link from "next/link";
-import { useAppSelector } from "@/hooks/redux";
 
 export const getServerSideProps = async (context)=>{
     const categorys = await getRequest('categorys');
