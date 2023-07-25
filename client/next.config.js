@@ -6,7 +6,8 @@ const nextConfig = {
   },
   env: {
     customKey: 'my-value',
-    apiServer: 'http://localhost:3001/'
+    apiServer: 'https://careful-fox-khakis.cyclic.app/'
+    //apiServer: 'http://localhost:3001/'
   },
 }
 

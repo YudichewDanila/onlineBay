@@ -1,5 +1,5 @@
 import axios from "axios";
-const urlbase = 'http://localhost:3001/';
+const urlbase = process.env.apiServer;
 
 export async function deleteRequest(atrebut) {
     let result = null;

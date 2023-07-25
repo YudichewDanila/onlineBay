@@ -1,5 +1,5 @@
 import axios from "axios";
-const urlbase = process.env.apiServer
+const urlbase = process.env.apiServer;
 export async function getRequest(atrebut, param = '') {
   let result = null;
   try {

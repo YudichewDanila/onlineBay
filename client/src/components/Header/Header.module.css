@@ -26,7 +26,6 @@
     padding: 0px 0px 0px 0px;
     width: 30px !important;
     line-height: 18px;
-    margin-left: auto;
   }
   .header_ListButtons .header_ListButton span {
     display: none;
@@ -80,6 +79,7 @@
   display: flex;
   align-items: left;
   justify-content: left;
+  background-color: white !important;
 }
 .header .mainNavBurMobyle .mainNavBurMobyle_CloaseButton span {
   font-family: "Material Icons";
@@ -147,4 +147,10 @@
   line-height: 18px;
   margin-left: auto;
   width: 90px;
+}
+.header .header_tolbur .header_ListButtons .header_ListButton .link {
+  text-decoration: none !important;
+}
+.header .header_tolbur .header_ListButtons .header_ListButton span {
+  color: rgb(97, 96, 96) !important;
 }/*# sourceMappingURL=Header.module.css.map */
